@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express')
+var router = express.Router()
 
 const resEnd = require('../modules/end')
 const OptPool = require('../modules/optPool')
@@ -36,6 +36,7 @@ router.post('/', function(req, res, next) {
         .then(arg => {
           const rs = arg.rs, conn = arg.conn
           if(rs.length){ // 匹配结果
+            req.token.user = post.username // 将用户名设置保存在session里
             resEnd(res, { token: post.username }, { status: 1, msg: '用户名密码匹配，登录成功' })
           } else {
             resEnd(res, {}, { status: 0, msg: '用户名或密码不正确' })

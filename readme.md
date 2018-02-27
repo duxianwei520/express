@@ -1,5 +1,5 @@
 # 前言
-个人学习express的代码总结
+个人学习express的demo
 
 
 
@@ -36,6 +36,9 @@ npm start (开启node服务程序)
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org 
 
+mysql的下载的话，如果找不到合适的，可以直接看我上传到github的压缩包，地址是
+https://github.com/duxianwei520/resource/blob/master/soft/mysql-5.5.43-win32.rar
+
 ```
 
 >  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
@@ -46,6 +49,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 - [√] 路由模块按需加载
 - [√] 登录
 - [√] 注册
+- [√] session控制
 
 
 
@@ -57,5 +61,5 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 
 ## 交流
-想跟其他的使用react的小伙伴们交流的话，
-可以加入我创建的reactQQ群：697562228~
+想跟其他的使用nodejs或者express的小伙伴们交流的话，
+可以加入我创建的nodejs的QQ群：697562228~
