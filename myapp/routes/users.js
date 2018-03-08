@@ -7,3 +7,10 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+
+// create table user(  
+//   uid int not null primary key auto_increment,  
+//   uname varChar(100) not null,  
+//   pwd varChar(100) not null   
+// )ENGINE=InnoDB DEFAULT CHARSET=utf8;

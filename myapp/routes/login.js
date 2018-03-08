@@ -14,7 +14,9 @@ router.post('/', function(req, res, next) {
       post += chunk
     })
     req.on('end', () => {
-      post = JSON.parse(post)
+      if(post){
+        post = JSON.parse(post)
+      }
       /* 使用promise start */
       // promise 链接数据库
       const getConnectionPro = (resolve, reject) => {

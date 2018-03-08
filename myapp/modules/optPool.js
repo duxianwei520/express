@@ -14,7 +14,7 @@ function OptPool(){
     if(this.flag){ 
       //监听connection事件 
       this.pool.on('connection', function(connection) {  
-        console.log('建立连接')
+        // console.log('建立连接')
         // connection.query('SET SESSION auto_increment_increment=1'); 
         this.flag = false; 
       }); 
